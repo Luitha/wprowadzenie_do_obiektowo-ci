@@ -17,6 +17,18 @@ public class Main {
  */
         Calculator calculator = new Calculator();
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj pierwszą liczbę");
+        int a = scanner.nextInt();
+        System.out.println("Zdefiniuj operację poprzez podanie + - * / ");
+        String znak = scanner.next();
+        System.out.println("Podaj drugą liczbę");
+        int b = scanner.nextInt();
+        switch (znak) {
+            case "+":
+                System.out.println(calculator.add(a, b));
+        }
+
+        /*
         System.out.println("Proszę podać pierwszą liczbę");
         int firstVariable = scanner.nextInt();
         System.out.println("Proszę podać drugą liczbę");
@@ -24,5 +36,7 @@ public class Main {
         System.out.println("Twój wynik to " + calculator.add(firstVariable, secondVariable));
         System.out.println("Twój wynik to " + calculator.sub(firstVariable, secondVariable));
         System.out.println("Twój wynik to " + calculator.multiply(firstVariable, secondVariable));
+
+         */
     }
 }
